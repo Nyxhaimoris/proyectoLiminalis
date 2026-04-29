@@ -1,0 +1,233 @@
+/* SIDEBAR */
+.chat-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+
+  color: var(--text-primary);
+  border-right: 1px solid var(--border);
+
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  overflow: hidden;
+
+  z-index: 1000;
+  box-shadow: var(--shadow-lg);
+
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.25s var(--ease);
+  pointer-events: none;
+  z-index: 9999999;
+}
+
+/* OPEN STATE */
+.chat-sidebar.open {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/* CLOSED STATE */
+.chat-sidebar.closed {
+  opacity: 0;
+  transform: translateX(-20px);
+  pointer-events: none;
+}
+
+/* CLOSE BUTTON */
+.toggle-sidebar.inside {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+
+  font-size: 16px;
+  cursor: pointer;
+
+  align-self: flex-end;
+
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+
+  transition: all 0.2s var(--ease);
+}
+
+.toggle-sidebar.inside:hover {
+  color: var(--text-primary);
+  background: var(--primary-soft);
+  border-color: var(--border);
+}
+
+/* TITLE */
+.chat-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 10px 0 14px;
+
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* LIST */
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+/* SCROLLBAR */
+.chat-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 10px;
+}
+
+.chat-list::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-soft);
+}
+
+/* CHAT ITEM */
+.chat-item {
+  padding: 10px;
+  border-radius: var(--radius-sm);
+
+  cursor: pointer;
+  font-size: 14px;
+
+  color: var(--text-primary);
+
+  transition: all 0.18s var(--ease);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chat-item:hover {
+  background: var(--primary-soft);
+  transform: translateX(2px);
+}
+
+/* EMPTY / LOADING */
+.chat-empty,
+.chat-loading {
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 10px;
+}
+
+/* RESIZER */
+.sidebar-resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 5px;
+  height: 100%;
+
+  cursor: col-resize;
+
+  background: transparent;
+  transition: background 0.2s var(--ease);
+}
+
+.sidebar-resizer:hover {
+  background: var(--primary-soft);
+}
+
+/* FLOATING BUTTON */
+.floating-toggle {
+  position: fixed;
+  left: 14px;
+  top: 80px;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: var(--radius-md);
+
+  border: 1px solid var(--border);
+
+  background: color-mix(in srgb, var(--surface) 65%, transparent);
+  backdrop-filter: var(--blur);
+
+  cursor: pointer;
+  z-index: 1100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.25s var(--ease);
+
+  box-shadow: var(--shadow-md);
+
+  animation: floatIn 0.4s ease-out;
+}
+
+/* ICON */
+.chat-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+
+  transition: transform 0.2s var(--ease);
+}
+
+.floating-toggle:hover {
+  background: var(--primary-soft);
+  transform: translateY(-2px) scale(1.05);
+  border-color: var(--primary);
+}
+
+.floating-toggle:hover .chat-icon {
+  transform: scale(1.1);
+}
+
+/* NEW CHAT BUTTON */
+.new-chat-btn {
+  margin-bottom: 10px;
+  padding: 10px;
+
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+
+  background: var(--primary-soft);
+  color: var(--text-primary);
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+}
+
+.new-chat-btn:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* ANIMATIONS */
+@keyframes floatIn {
+  from {
+    transform: translateY(-10px) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,78 @@
+.privacy-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.4s ease;
+}
+
+/* TITULO PRINCIPAL */
+.privacy-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* FECHA */
+.privacy-container p strong {
+  color: var(--text-primary);
+}
+
+.privacy-container > p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* SECCIONES */
+.privacy-container h2 {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  border-left: 4px solid var(--primary);
+  padding-left: 10px;
+}
+
+/* SUBSECCIONES */
+.privacy-container h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+/* TEXTO */
+.privacy-container p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* LISTAS */
+.privacy-container ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.privacy-container li {
+  margin-bottom: 6px;
+  color: var(--text-secondary);
+}
+
+/* EFECTO HOVER SUAVE */
+.privacy-container:hover {
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .privacy-container {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .privacy-container h1 {
+    font-size: 1.8rem;
+  }
+}

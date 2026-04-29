@@ -1,0 +1,474 @@
+{
+    "nav": {
+        "search_users": "Buscar Usuarios",
+        "register": "Registro",
+        "login": "Iniciar Sesión",
+        "home": "Inicio",
+        "my_profile": "Mi Perfil",
+        "settings": "Configuración",
+        "feed": "Feed",
+        "create_post": "Publicar",
+        "chat_discovery": "Chats Publicos",
+        "logout": "Cerrar Sesión",
+        "logo_alt": "Logo de la App",
+        "avatar_alt": "Avatar"
+    },
+    "notFound": {
+        "title": "404 - Página no encontrada",
+        "description": "La página que buscas no existe.",
+        "backHome": "Ir al Inicio"
+    },
+    "settings": {
+        "title": "Configuración",
+        "sections": {
+            "appearance": "Apariencia",
+            "language": "Idioma",
+            "security": "Seguridad",
+            "privacy": "Privacidad"
+        },
+        "theme": "Tema",
+        "theme_desc": "Elige entre modo claro u oscuro.",
+        "font_size": "Tamaño del texto",
+        "textsize": {
+            "small": "Pequeño",
+            "medium": "Mediano",
+            "large": "Grande",
+            "extra": "Extra Grande"
+        },
+        "follower_privacy_label": "Visibilidad de Seguidores y Seguidos",
+        "follower_privacy_desc": "Controla quien puede ver a quien sigues y quien te sigue.",
+        "privacy": {
+            "public": "Publico",
+            "mutual": "Seguimiento Mutuo",
+            "private": "Privado"
+        },
+        "language_label": "Idioma",
+        "language_desc": "Selecciona tu idioma preferido.",
+        "current_password": "Contraseña Actual",
+        "new_password": "Nueva Contraseña",
+        "change_password_btn": "Actualizar Contraseña",
+        "password_success": "Contraseña actualizada correctamente",
+        "saving": "Guardando...",
+        "themes": {
+            "light": "Claro",
+            "dark": "Oscuro",
+            "chocolate": "Chocolate",
+            "liminalis": "Liminalis",
+            "cyberpunk": "Cyberpunk",
+            "aurora": "Dark Aurora",
+            "europe": "Europeo"
+        }
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados.",
+        "about": "Acerca de",
+        "privacy": "Privacidad",
+        "contact": "Contacto",
+        "tech": "Stack Tecnico"
+    },
+    "cropper": {
+        "cancel": "Cancelar",
+        "crop": "Recortar"
+    },
+    "profile": {
+        "default_name": "Tu Nombre",
+        "editing_title": "Editando Perfil",
+        "save_btn": "Guardar",
+        "edit_banner": "Editar portada",
+        "stats": {
+            "following": "Siguiendo",
+            "followers": "Seguidores"
+        },
+        "placeholders": {
+            "name": "Nombre",
+            "username": "usuario",
+            "bio": "Escribe tu biografía aquí..."
+        },
+        "cropper": {
+            "title": "Ajustar Banner",
+            "done": "Listo"
+        },
+        "success": {
+            "save": "Cambios guardados con éxito"
+        },
+        "errors": {
+            "fetch": "Error al cargar perfil",
+            "save": "Error al sincronizar perfil"
+        }
+    },
+    "home": {
+        "hero_subtitle": "Conecta, comparte y descubre en tu nueva red social.",
+        "buttons": {
+            "register": "Registrarse",
+            "login": "Iniciar sesión",
+            "go_to_feed": "Ir al feed",
+            "logout": "Cerrar sesión"
+        },
+        "features": {
+            "title": "¿Qué ofrecemos?",
+            "posts": {
+                "title": "Publicaciones",
+                "description": "Comparte tus ideas y momentos con la comunidad."
+            },
+            "profiles": {
+                "title": "Perfiles",
+                "description": "Conoce a otras personas y personaliza tu perfil."
+            },
+            "chats": {
+                "title": "Chats",
+                "description": "Chatea en tiempo real con tus amigos y contactos."
+            }
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "Iniciar Sesión",
+            "email_label": "Correo Electrónico",
+            "password_label": "Contraseña",
+            "submit_btn": "Iniciar Sesión",
+            "processing": "Procesando...",
+            "no_account_link": "¿No tienes cuenta? Regístrate",
+            "error_generic": "Error de conexión con el servidor"
+        },
+        "denied": {
+            "title": "Acceso Denegado",
+            "description": "No tienes permisos para acceder a esta página.",
+            "back_home": "Volver al Inicio"
+        },
+        "register": {
+            "title": "Registro de Usuario",
+            "name_label": "Nombre Completo",
+            "username_label": "Nombre de Usuario",
+            "email_label": "Correo Electrónico",
+            "password_label": "Contraseña",
+            "avatar_label": "Avatar (Opcional)",
+            "submit_btn": "Registrarse",
+            "processing": "Procesando...",
+            "already_account": "¿Ya tiene una cuenta? Inicie sesión",
+            "success": "¡Usuario registrado correctamente!",
+            "error_generic": "Error en el registro"
+        }
+    },
+    "profile_view": {
+        "loading": "Cargando perfil...",
+        "error_loading": "Error al cargar el perfil",
+        "not_found": "Usuario no encontrado",
+        "edit_profile_btn": "Editar mi Perfil",
+        "follow_btn": "Seguir",
+        "unfollow_btn": "Siguiendo",
+        "following": "Siguiendo",
+        "followers": "Seguidores",
+        "joined": "Se unió el",
+        "follow_error": "No se pudo procesar la acción."
+    },
+    "search": {
+        "title": "Buscar Usuarios",
+        "placeholder": "Escribe un nombre o @username...",
+        "button": "Buscar",
+        "loading": "Cargando...",
+        "view_profile": "Ver Perfil",
+        "no_bio": "Sin descripción.",
+        "no_more": "No hay más usuarios que coincidan.",
+        "no_results": "No se encontraron resultados."
+    },
+    "follow_list": {
+        "private": "Esta lista es privada.",
+        "followers": "Seguidores",
+        "following": "Siguiendo",
+        "no_users": "No se encontraron usuarios.",
+        "loading": "Cargando...",
+        "error_load": "Error al cargar usuarios",
+        "error_structure": "Estructura de datos inválida del servidor"
+    },
+    "no_more_results": "No hay más resultados.",
+    "privacyPage": {
+        "title": "Política de Privacidad",
+        "lastUpdate": "Última actualización",
+        "sections": {
+            "info": {
+                "title": "1. Información que recopilamos",
+                "subtitle": "Podemos recopilar los siguientes datos:",
+                "user_provided_title": "Información proporcionada por el usuario",
+                "user_items": [
+                    "Nombre de usuario",
+                    "Correo electrónico",
+                    "Contraseña (encriptada)",
+                    "Imagen de perfil (avatar)",
+                    "Banner del perfil (banner)",
+                    "Mensajes enviados dentro de la plataforma"
+                ],
+                "auto_title": "Información recopilada automáticamente",
+                "auto_items": [
+                    "Dirección IP",
+                    "Tipo de dispositivo y navegador",
+                    "Fecha y hora de acceso",
+                    "Actividad dentro de la plataforma"
+                ]
+            },
+            "usage": {
+                "title": "2. Uso de la información",
+                "items": [
+                    "Crear y gestionar tu cuenta",
+                    "Permitir la comunicación entre usuarios",
+                    "Mejorar la experiencia de usuario",
+                    "Garantizar la seguridad de la plataforma",
+                    "Cumplir con obligaciones legales"
+                ]
+            },
+            "sharing": {
+                "title": "3. Compartición de datos",
+                "description": "No vendemos ni compartimos tu información personal con terceros, excepto cuando sea requerido por ley o para el funcionamiento del servicio."
+            },
+            "security": {
+                "title": "4. Seguridad de los datos",
+                "items": [
+                    "Encriptación de contraseñas",
+                    "Uso de tokens de autenticación (JWT)",
+                    "Protección contra accesos no autorizados"
+                ]
+            },
+            "rights": {
+                "title": "5. Derechos del usuario",
+                "description": "Tienes derecho a:",
+                "items": [
+                    "Acceder a tus datos",
+                    "Modificar o eliminar tu información",
+                    "Solicitar la eliminación de tu cuenta"
+                ]
+            },
+            "cookies": {
+                "title": "6. Cookies",
+                "description": "Podemos usar cookies o tecnologías similares para mejorar la experiencia de usuario."
+            },
+            "changes": {
+                "title": "7. Cambios en esta política",
+                "description": "Nos reservamos el derecho de modificar esta política en cualquier momento. Los cambios se notificarán en esta página."
+            },
+            "contact": {
+                "title": "8. Contacto",
+                "description": "Si tienes preguntas sobre esta política, puedes contactarnos en:"
+            }
+        }
+    },
+    "contactPage": {
+        "title": "Contacto",
+        "subtitle": "¿Tienes alguna duda o sugerencia? Estamos aquí para ayudarte.",
+        "form": {
+            "name": "Nombre",
+            "subject": "Asunto",
+            "message": "Mensaje",
+            "send": "Enviar Reporte",
+            "placeholder_subject": "Ej: Error en mi perfil, Sugerencia..."
+        },
+        "other_ways": {
+            "title": "Otras formas de contacto",
+            "email_label": "Correo electrónico",
+            "social": "Redes Sociales",
+            "github": "Reportar un error en GitHub"
+        },
+        "faq_prompt": "¿Buscas una respuesta rápida? Revisa nuestras Preguntas Frecuentes."
+    },
+    "aboutPage": {
+        "title": "Acerca de Liminalis",
+        "mission_title": "Nuestra Misión",
+        "mission_text": "Liminalis nace como un espacio para conectar ideas en la era digital, priorizando la privacidad, la personalización y la comunidad real.",
+        "features_title": "¿Por qué Liminalis?",
+        "features": {
+            "privacy": {
+                "title": "Privacidad primero",
+                "desc": "Tus datos son tuyos. Encriptamos tu información y te damos el control total."
+            },
+            "custom": {
+                "title": "Personalización",
+                "desc": "Desde temas visuales hasta el tamaño de fuente. Tu espacio, tus reglas."
+            },
+            "open": {
+                "title": "Código Abierto",
+                "desc": "Creemos en la transparencia. Puedes revisar nuestro código en GitHub."
+            }
+        },
+        "team_title": "El Proyecto",
+        "team_text": "Desarrollado con pasión como un proyecto de red social, utilizando React, Node y Codeigniter."
+    },
+    "techPage": {
+        "title": "Nuestro Stack Tecnológico",
+        "subtitle": "La arquitectura detrás de la experiencia Liminalis.",
+        "sections": {
+            "backend": {
+                "title": "Backend & API",
+                "description": "Una base sólida y escalable para gestionar tus datos con la máxima eficiencia.",
+                "items": [
+                    "**PHP 8.2 & CodeIgniter 4:** El motor que impulsa nuestra lógica de servidor, elegido por su increíble velocidad y bajo consumo de memoria.",
+                    "**Seguridad con JWT:** Autenticación robusta mediante JSON Web Tokens para mantener tu sesión protegida sin sacrificar rendimiento.",
+                    "**Testing con PHPUnit:** Suite de pruebas automatizadas que garantizan la estabilidad de cada actualización."
+                ]
+            },
+            "frontend": {
+                "title": "Frontend & UX",
+                "description": "Interfaces reactivas diseñadas para una navegación fluida y visualmente impactante.",
+                "items": [
+                    "**React 18:** Arquitectura basada en componentes para una experiencia de usuario rápida y modular.",
+                    "**Framer Motion:** Animaciones fluidas y transiciones de estado que dan vida a la interfaz.",
+                    "**OGL:** Integración de WebGL de alto rendimiento para efectos visuales avanzados y fluidos.",
+                    "**i18next:** Soporte nativo para múltiples idiomas con detección automática."
+                ]
+            },
+            "realtime": {
+                "title": "Real-Time Engine",
+                "description": "Un motor de mensajería en tiempo real altamente concurrente basado en Go y WebSockets.",
+                "items": [
+                    "**Go (Golang):** Núcleo del sistema de tiempo real, optimizado para concurrencia masiva y baja latencia.",
+                    "**Gorilla WebSocket:** Comunicación full-duplex entre cliente y servidor para mensajería instantánea.",
+                    "**Room-based architecture:** Sistema de hubs y salas para segmentar chats y escalar horizontalmente.",
+                    "**Concurrency model:** Gestión eficiente de miles de conexiones simultáneas mediante goroutines y channels.",
+                    "**Security layer:** Validación de tokens vía backend PHP antes de establecer conexión WebSocket.",
+                    "**MySQL integration:** Persistencia de mensajes con control de permisos y validación por consulta directa."
+                ]
+            },
+            "tools": {
+                "title": "Herramientas & Ecosistema",
+                "description": "Librerías especializadas que perfeccionan cada detalle de la red social.",
+                "items": [
+                    "**Axios:** Gestión eficiente de peticiones HTTP con interceptores para seguridad.",
+                    "**React Easy Crop:** Herramienta intuitiva para el ajuste perfecto de avatares y portadas.",
+                    "**React Testing Library:** Garantía de calidad en la interfaz simulando interacciones reales."
+                ]
+            }
+        }
+    },
+    "feed": {
+        "title": "Explorar",
+        "loading": "Cargando contenido...",
+        "end": "Has llegado al final.",
+        "empty": "No hay publicaciones disponibles."
+    },
+    "post_card": {
+        "read_more": "Leer más",
+        "image_alt": "Imagen de {{title}}"
+    },
+    "banned": {
+        "title": "Cuenta bloqueada",
+        "description": "Tu cuenta ha sido suspendida. Si crees que esto es un error, contacta con soporte."
+    },
+    "create_post": {
+        "title_placeholder": "Escribe un título...",
+        "publish_btn": "Publicar",
+        "publishing": "Publicando...",
+        "success": "Post creado e imágenes subidas con éxito",
+        "error": "Error al crear el post",
+        "modes": {
+            "edit": "Editar",
+            "split": "Dividido",
+            "preview": "Vista previa"
+        },
+        "link_modal": {
+            "title": "Insertar Enlace",
+            "url": "URL",
+            "label": "Texto (Opcional)",
+            "cancel": "Cancelar",
+            "confirm": "Insertar"
+        },
+        "image_library": {
+            "title": "Imágenes",
+            "upload_btn": "Subir Imágenes",
+            "empty": "Aún no hay imágenes."
+        }
+    },
+    "post_view": {
+        "loading": "Cargando publicación...",
+        "error_not_found": "Publicación no encontrada",
+        "error_generic": "Error al cargar la publicación",
+        "published_on": "Publicado el {{date}}",
+        "image_error": "Imagen no disponible"
+    },
+    "chat_sidebar": {
+        "title": "Chats",
+        "loading": "Cargando...",
+        "empty": "No hay chats",
+        "open": "Abrir chats",
+        "close": "Cerrar chats",
+        "new_chat": "Nuevo chat"
+    },
+    "image_library": {
+        "title": "Imágenes",
+        "clear": "Limpiar",
+        "insert": "Insertar",
+        "remove": "Quitar"
+    },
+    "link_modal": {
+        "title": "Insertar Enlace",
+        "url": "URL",
+        "label": "Texto (Opcional)",
+        "cancel": "Cancelar",
+        "confirm": "Insertar"
+    },
+    "create_chat": {
+        "title": "Crear Chat Grupal",
+        "group_name": "Nombre del Grupo",
+        "group_placeholder": "Mi Grupo",
+        "visibility": "Visibilidad",
+        "public": "Público",
+        "private": "Privado",
+        "public_hint": "Cualquiera puede unirse a este grupo",
+        "private_hint": "Solo usuarios invitados pueden unirse",
+        "submit": "Crear Grupo",
+        "creating": "Creando...",
+        "errors": {
+            "name_required": "El nombre del grupo es obligatorio",
+            "server": "Error del servidor al crear el chat",
+            "generic": "Error al crear el chat"
+        }
+    },
+    "chat_finder": {
+        "search_placeholder": "Buscar chats públicos...",
+        "join": "Unirse",
+        "loading": "Cargando...",
+        "empty": "No se encontraron chats",
+        "unnamed": "Chat sin nombre",
+        "meta_separator": "•",
+        "errors": {
+            "fetch": "Error al cargar los chats",
+            "join": "Error al unirse al chat"
+        }
+    },
+    "chat_settings": {
+        "title": "Configuración del Chat",
+        "back": "Volver",
+        "invite_users": "Invitar Usuarios",
+        "search_placeholder": "Buscar seguidores...",
+        "searching": "Buscando...",
+        "no_users": "No se encontraron usuarios",
+        "invite": "Invitar",
+        "invited": "Invitado",
+        "pending_invites": "Invitaciones Pendientes",
+        "cancel": "Cancelar",
+        "danger_zone": "Zona de Peligro",
+        "leave_chat": "Salir del Chat",
+        "confirm_leave": "¿Estás seguro?",
+        "errors": {
+            "invite": "Error al invitar al usuario",
+            "leave": "Error al salir del chat"
+        }
+    },
+    "chat_page": {
+        "loading": "Cargando...",
+        "no_access": "No tienes acceso a este chat",
+        "errors": {
+            "delete": "Error al eliminar el mensaje"
+        }
+    },
+    "chat_invitation": {
+        "verifying": "Verificando...",
+        "not_found_title": "Invitación no encontrada",
+        "not_found_desc": "Esta invitación puede haber sido procesada o el enlace no es válido.",
+        "back_home": "Volver al Inicio",
+        "title": "Unirse al Grupo",
+        "invited_text": "Has sido invitado a unirte a",
+        "accept": "Aceptar y Unirse",
+        "decline": "Rechazar",
+        "joining": "Uniéndose...",
+        "errors": {
+            "action": "No se pudo procesar la invitación"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.r-page {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 30px;
+  background: var(--card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.5s ease;
+}
+
+.r-page h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.7rem;
+}
+
+.r-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.r-page label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.r-page button {
+  margin-top: 10px;
+}

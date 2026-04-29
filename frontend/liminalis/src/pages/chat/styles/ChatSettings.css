@@ -1,0 +1,125 @@
+.chat-settings-page {
+  min-height: 100vh;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: fadeIn 0.4s var(--ease);
+}
+
+/* Header */
+.chat-settings-page header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  background: linear-gradient(180deg, var(--card), var(--surface));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: var(--blur);
+}
+
+.chat-settings-page header h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.chat-settings-page header button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  transition: all 0.25s var(--ease);
+}
+
+.chat-settings-page header button:hover {
+  border-color: var(--primary);
+  color: var(--text-primary);
+  box-shadow: 0 0 0 3px var(--primary-soft);
+}
+
+/* Content wrapper */
+.settings-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Danger zone card */
+.danger-zone {
+  background: linear-gradient(180deg, var(--card), var(--surface));
+  border: 1px solid rgba(255, 90, 106, 0.25);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.danger-zone::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 90, 106, 0.12),
+    transparent 55%
+  );
+  pointer-events: none;
+}
+
+.danger-zone h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--error);
+  margin-bottom: 8px;
+}
+
+.danger-zone p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.leave-btn {
+  background: linear-gradient(135deg, var(--error), #ff2e63);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+  box-shadow: 0 8px 24px rgba(255, 90, 106, 0.25);
+}
+
+.leave-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 90, 106, 0.35);
+}
+
+.leave-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 620px) {
+  .chat-settings-page {
+    padding: 16px;
+  }
+
+  .danger-zone {
+    padding: 18px;
+  }
+
+  .chat-settings-page header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

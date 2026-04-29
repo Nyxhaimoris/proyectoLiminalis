@@ -1,0 +1,92 @@
+/* Layout */
+.stack-page {
+  padding: 60px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text, #fff);
+}
+
+/* Header */
+.stack-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.stack-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.stack-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.75;
+}
+
+/* Grid */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+/* Card */
+.stack-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+}
+
+.stack-card:hover {
+  transform: translateY(-6px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* Card header */
+.stack-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+.stack-card p {
+  margin-bottom: 18px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+/* List */
+.stack-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stack-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Check icon */
+.stack-check {
+  color: var(--success);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Footer */
+.stack-footer {
+  margin-top: 70px;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 0.9rem;
+}

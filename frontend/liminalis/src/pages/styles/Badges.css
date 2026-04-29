@@ -1,0 +1,180 @@
+/* ========================= */
+/*        ADMIN BADGE        */
+/* ========================= */
+
+.admin-badge {
+  --rx: 0deg;
+  --ry: 0deg;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px 14px;
+  border-radius: var(--radius-lg);
+
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+
+  color: rgba(255, 240, 240, 0.95);
+
+  background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(255, 60, 60, 0.18),
+      transparent 60%
+    ),
+    linear-gradient(
+      135deg,
+      #120000,
+      #2a0000 40%,
+      #5a0a0a 75%,
+      #1a0000
+    );
+
+  border: 1px solid rgba(255, 70, 70, 0.25);
+
+  overflow: hidden;
+  isolation: isolate;
+
+  transform:
+    perspective(800px)
+    rotateX(var(--ry))
+    rotateY(var(--rx))
+    translateY(var(--lift, 0px));
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: badgeFloat 6s ease-in-out infinite;
+}
+
+.admin-badge span {
+  position: relative;
+  z-index: 3;
+
+  text-shadow:
+    0 0 8px rgba(255, 0, 0, 0.5),
+    0 0 16px rgba(255, 0, 0, 0.25);
+}
+
+.admin-badge::after {
+  content: "";
+  position: absolute;
+  inset: -80%;
+
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    rgba(255, 0, 0, 0.25),
+    transparent,
+    rgba(120, 0, 0, 0.2),
+    transparent
+  );
+
+  filter: blur(28px);
+  opacity: 0.4;
+
+  animation: auraSpin 6s linear infinite;
+  z-index: -1;
+}
+
+.admin-badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0,0,0,0.85), transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(50,0,0,0.6), transparent 55%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(0,0,0,0.25) 0px,
+      rgba(0,0,0,0.25) 2px,
+      transparent 2px,
+      transparent 7px
+    );
+
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+
+  animation: obsidianFlow 7s linear infinite;
+  pointer-events: none;
+}
+
+.admin-badge span::before {
+  content: "";
+  position: absolute;
+  inset: -60%;
+
+  background:
+    radial-gradient(circle at 25% 50%, rgba(255,255,255,0.9), transparent 35%),
+    radial-gradient(circle at 75% 40%, rgba(255,0,0,0.75), transparent 40%),
+    radial-gradient(circle at 55% 80%, rgba(255,80,80,0.6), transparent 45%);
+
+  mix-blend-mode: screen;
+  opacity: 0;
+  filter: blur(1px);
+
+  animation: lightningBurst 3.8s infinite;
+}
+
+.admin-badge:hover {
+  transform:
+    perspective(800px)
+    rotateX(var(--ry))
+    rotateY(var(--rx))
+    translateY(-3px)
+    scale(1.06);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.6),
+    0 0 35px rgba(255, 0, 0, 0.45),
+    0 0 90px rgba(255, 0, 0, 0.2);
+}
+
+@keyframes auraSpin {
+  0% { transform: rotate(0deg) scale(1); }
+  100% { transform: rotate(360deg) scale(1.05); }
+}
+
+@keyframes obsidianFlow {
+  0% { filter: contrast(1); }
+  50% { filter: contrast(1.25) hue-rotate(10deg); }
+  100% { filter: contrast(1); }
+}
+
+@keyframes lightningBurst {
+  0%, 86%, 100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  88% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  90% {
+    opacity: 0.4;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  96% {
+    opacity: 0.7;
+    transform: scale(1.08);
+  }
+
+  98% {
+    opacity: 0;
+  }
+}
+
+@keyframes badgeFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-2px); }
+}
